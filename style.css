@@ -395,8 +395,8 @@
 
 @media screen and (max-width: 480px){
     .main_img_card{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .fa-users, .fa-layer-group{
         font-size: 4rem;
@@ -639,4 +639,22 @@
         padding: 10px;
         width: 100%;
     }
+}
+
+
+
+/*chrome scrollbar appearence*/
+::-webkit-scrollbar{
+    width: 5px; 
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
