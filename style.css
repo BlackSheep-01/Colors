@@ -96,7 +96,7 @@
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px){  /*Display for smaller screen width*/
+@media screen and (max-width: 960px){  
     .navbar_container{
         display: flex;
         justify-content: space-between;
@@ -137,7 +137,6 @@
         text-align: center;
         padding: 2rem;
         width: 100%;
-        /* display: table; */
     }
     .navbar_btn{
         padding-bottom: 2rem;
@@ -311,7 +310,6 @@
     justify-content: center;
     color: #fff;
     background-image: linear-gradient(to right,#00dbde 0%,#fc00ff 100%);
-
 }
 
 .main_btn{
@@ -375,8 +373,8 @@
         justify-content: center;
     }
     .main_img_card{
-        height: 425px;
-        width: 425px;
+        height: 400px;
+        width: 400px;
     }
     .main_content{
         text-align: center;
@@ -397,8 +395,8 @@
 
 @media screen and (max-width: 480px){
     .main_img_card{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     .fa-users, .fa-layer-group{
         font-size: 4rem;
@@ -421,13 +419,14 @@
 
 /*  SERVICES  */
 .services{
-    background: #131313;
+    background: #000000;
+    background: linear-gradient(to right,#161616,#000000);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 50px;
+    padding: 50px;
 }
 
 .services h1{
@@ -512,15 +511,30 @@
     .services_container{
         grid-template-columns: 1fr 1fr;
     }
+    .services_card:hover{
+        transform: scaleX(1.075);
+        transition: 0.3s ease-in;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 768px){
     .services_container{
         grid-template-columns: 1fr;
     }
+    .services_card:hover{
+        transform: scaleX(1.05);
+        transition: 0.3s ease-in;
+        cursor: pointer;
+    }
 }
 
 /*  SIGN UP  */
+#signup{
+    background: #000000;
+    background: linear-gradient(to right,#161616,#000000);
+}
+
 #imgcard-2{
     background: #ff512f;
     background: -webkit-linear-gradient(to right,#dd2476,#ff512f); 

@@ -1,4 +1,4 @@
-const mobile_menu= document.querySelector("#mobile-menu")
+const mobile_menu= document.querySelector("#mobile-menu")   //hamburgur icon
 const navbar_menu= document.querySelector(".navbar_menu")
 const navLogo= document.querySelector("#navbar-logo")
 
@@ -50,7 +50,7 @@ const hideMobileMenu = () => {
     const menuBars= document.querySelector(".is-active")
     if(window.innerWidth <= 768 && menuBars){
         mobile_menu.classList.toggle("is-active")
-        navbar_menu.classList.remove("active")
+        navbar_menu.classList.toggle("active")
     }
 }
 navbar_menu.addEventListener("click",hideMobileMenu)
